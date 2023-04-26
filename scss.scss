@@ -1,0 +1,88 @@
+$percentages : 0%, 25%, 50%, 75%, 100%;
+$colors1 : #10c018, #1056c0, #ef0a1a, #254878, #04a1d5;
+$colors2 : #04a1d5, #10c018, #1056c0, #ef0a1a, #254878;
+$colors3 : #254878, #04a1d5, #10c018, #1056c0, #ef0a1a;
+$colors4 : #ef0a1a, #254878, #04a1d5, #10c018, #1056c0;
+@keyframes blinkingBackground1{
+    @each $percent in $percentages {
+        $i: index($percentages, $percent);
+        $color: nth($colors1, $i);
+        #{$percent} {
+          background-color: $color;
+        }
+    }
+}
+
+@keyframes blinkingBackground2{
+    @each $percent in $percentages {
+        $i: index($percentages, $percent);
+        $color: nth($colors2, $i);
+        #{$percent} {
+          background-color: $color;
+        }
+    }
+}
+
+@keyframes blinkingBackground3{
+    @each $percent in $percentages {
+        $i: index($percentages, $percent);
+        $color: nth($colors3, $i);
+        #{$percent} {
+          background-color: $color;
+        }
+    }
+}
+
+@keyframes blinkingBackground4{
+    @each $percent in $percentages {
+        $i: index($percentages, $percent);
+        $color: nth($colors4, $i);
+        #{$percent} {
+          background-color: $color;
+        }
+    }
+}
+
+@keyframes bodybg{
+  0% {background-color: #fff;}
+  100% {background-color: #000;} 
+}
+.blinkbody{
+    color: #fff;
+    display: inline-block;
+    animation: bodybg 0.1s infinite;
+    width: 25%;
+    height: 25%;
+}
+
+.blink-bg1{
+    color: #fff;
+    display: inline-block;
+    animation: blinkingBackground1 0.1s infinite;
+    width: 25%;
+    height: 25%;
+}
+
+.blink-bg2{
+    color: #fff;
+    display: inline-block;
+    animation: blinkingBackground2 0.1s infinite;
+    width: 25%;
+    height: 25%;
+}
+
+.blink-bg3{
+    color: #fff;
+    display: inline-block;
+    animation: blinkingBackground3 0.1s infinite;
+    width: 25%;
+    height: 25%;
+}
+
+.blink-bg4{
+    color: #fff;
+    display: inline-block;
+    animation: blinkingBackground4 0.1s infinite;
+    width: 25%;
+    height: 25%;
+}

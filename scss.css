@@ -1,0 +1,115 @@
+@keyframes blinkingBackground1 {
+  0% {
+    background-color: #10c018;
+  }
+  25% {
+    background-color: #1056c0;
+  }
+  50% {
+    background-color: #ef0a1a;
+  }
+  75% {
+    background-color: #254878;
+  }
+  100% {
+    background-color: #04a1d5;
+  }
+}
+@keyframes blinkingBackground2 {
+  0% {
+    background-color: #04a1d5;
+  }
+  25% {
+    background-color: #10c018;
+  }
+  50% {
+    background-color: #1056c0;
+  }
+  75% {
+    background-color: #ef0a1a;
+  }
+  100% {
+    background-color: #254878;
+  }
+}
+@keyframes blinkingBackground3 {
+  0% {
+    background-color: #254878;
+  }
+  25% {
+    background-color: #04a1d5;
+  }
+  50% {
+    background-color: #10c018;
+  }
+  75% {
+    background-color: #1056c0;
+  }
+  100% {
+    background-color: #ef0a1a;
+  }
+}
+@keyframes blinkingBackground4 {
+  0% {
+    background-color: #ef0a1a;
+  }
+  25% {
+    background-color: #254878;
+  }
+  50% {
+    background-color: #04a1d5;
+  }
+  75% {
+    background-color: #10c018;
+  }
+  100% {
+    background-color: #1056c0;
+  }
+}
+@keyframes bodybg {
+  0% {
+    background-color: #fff;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+.blinkbody {
+  color: #fff;
+  display: inline-block;
+  animation: bodybg 0.1s infinite;
+  width: 25%;
+  height: 25%;
+}
+
+.blink-bg1 {
+  color: #fff;
+  display: inline-block;
+  animation: blinkingBackground1 0.1s infinite;
+  width: 25%;
+  height: 25%;
+}
+
+.blink-bg2 {
+  color: #fff;
+  display: inline-block;
+  animation: blinkingBackground2 0.1s infinite;
+  width: 25%;
+  height: 25%;
+}
+
+.blink-bg3 {
+  color: #fff;
+  display: inline-block;
+  animation: blinkingBackground3 0.1s infinite;
+  width: 25%;
+  height: 25%;
+}
+
+.blink-bg4 {
+  color: #fff;
+  display: inline-block;
+  animation: blinkingBackground4 0.1s infinite;
+  width: 25%;
+  height: 25%;
+}/*# sourceMappingURL=scss.css.map */
